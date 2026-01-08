@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kámen Nůžky Papír Tapír Spock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Kámen Nůžky Papír Tapír Spock</h1>
+<p>Vyber si svůj tah:</p>
+
+<div class="choices">
+    <img src="img/rock.png" onclick="play('rock')">
+    <img src="img/paper.png" onclick="play('paper')">
+    <img src="img/scissors.png" onclick="play('scissors')">
+    <img src="img/lizard.png" onclick="play('lizard')">
+    <img src="img/spock.png" onclick="play('spock')">
+</div>
+
+<h3>Skóre</h3>
+<p id="score">Ty: 0 | Počítač: 0 | Remízy: 0</p>
+
+<div id="result">
+    <p id="player"></p>
+    <p id="computer"></p>
+    <h2 id="winner"></h2>
+</div>
+
+<button onclick="resetGame()">Reset</button>
+
+<script src="script.js"></script>
+</body>
+</html>
